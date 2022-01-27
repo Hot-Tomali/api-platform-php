@@ -22,7 +22,6 @@ jobs:
           target: api_platform_php
           push: true
           tags: 'hottomali/api-platform-php:latest'
-          outputs: type=docker/dest=/tmp/api-platform-php.tar
       - name: Build and push api-platform-php-xdebug
         id: api_platform_php_xdebug
         uses: docker/build-push-action@v2
