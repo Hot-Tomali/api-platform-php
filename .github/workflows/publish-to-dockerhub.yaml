@@ -6,6 +6,7 @@ name: publish-to-dockerhub
 jobs:
   docker:
     runs-on: ubuntu-latest
+    environment: dockerhub
     steps:
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
